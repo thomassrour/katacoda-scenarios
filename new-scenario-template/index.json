@@ -1,8 +1,8 @@
 {
-  "title": "New Scenario Template",
-  "description": "A simple scenario example.",
+  "title": "Optimizing Docker Images",
+  "description": "A tutorial showing the many ways to reduce the size of Docker Images",
   "difficulty": "Beginner",
-  "time": "3 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
