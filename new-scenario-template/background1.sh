@@ -1,9 +1,10 @@
 mkdir project
-cd project
-mkdir First_Try
-touch Dockerfile
+alias proj = "/root/project"
+mkdir proj/First_Try
+alias first = "/root/project/First_Try"
+touch first/Dockerfile
 echo "#This is where you write your first Dockerfile" >> Dockerfile
-mkdir Second_Try
-touch Dockerfile
+mkdir proj/Second_Try
+alias second = "/root/project/Second_Try"
+touch second/Dockerfile
 echo "#This is where you write your second Dockerfile" >> Dockerfile
-cd project
