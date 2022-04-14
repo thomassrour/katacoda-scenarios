@@ -8,7 +8,7 @@ Let us try to create a new Ubuntu image, and to install some packages on it that
 First, go into the `First_Try` package, and add the following to the Dockerfile
 
 ```
-FROM ubuntu:latest
+FROM ubuntu:18.04
 RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get install vim -y
@@ -25,7 +25,7 @@ docker build -t your_image_name .
 Now, we will try to optimize this, by reducing the installation of all these packages to a single `RUN` instruction. Navigate to the `Second_Try` package, and write the following to the Dockerfile
 
 ```
-FROM ubuntu:latest
+FROM ubuntu:18.04
 RUN apt-get update -y && apt-get upgrade -y && apt-get install --no-install-recommends vim curl dnsutils -y
 ```
 
@@ -37,7 +37,7 @@ Then, navigate to /root/project/Second_Try and build the image using
 docker build -t your_image_name .
 ```
 
-Firstly, you can easily notice that build time is dramatically reduced in the second instance. Now, list the images using
+Firstly, you can easily notice that build time is reduced in the second instance, even without taking into consideration that the first `FROM` instruction isn't run again since it is cached (more on this later) . Now, list the images using
 
 ```
 docker image ls
