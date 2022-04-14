@@ -1,31 +1,19 @@
-# New Scenario Template (Your Title Here)
-
-This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
+# Optimizing your Docker images
 
 ## Description
 
-2-3 sentences on what the scenario covers, illustrates, and teaches. What technology is used, and what task will the learner have accomplished by the end?
-
-Importantly, why does this matter? What can this technology, tool, or approach help you accomplish? Briefly communicate the real-world application(s) of this skill.
+Nowadays, Docker (and containeraztion in general) is an essential tool for building and deploying applications. At the root of this technology are Docker images. However, these can very quickly get very large. In this tutorial, you will learn how to reduce both the size of an image and the time it takes to build it through different techniques.
 
 ## Learning Objective
 
-- 3-4 bullets
-- of what you
-- will learn
+-   How and why to reduce the number of unecessary layers when writing a Dockerfile
+-   How to use a multi-stage build, and why it makes the final image much smaller
+-   How the Docker cache works and how to leverage it to make the image build faster
 
 ## Prerequisite Skills
 
-Define the target audience here, and list any prerequisite skills. For example:
+This tutorial is aimed at people with some experience using Docker, especially Dockerfile writing basics, and DevOps engineers, looking to optimize their Docker images.
 
-This is for software developers with prior experience using Jenkins to deploy web applications.
+## Why it matters for DevOps
 
-## Table of Contents
-
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
-
-- Scenario A
-- Scenario B
-- Scenario C
-
-
+When developping software, each new version will require more dependencies and configs, which makes the Docker image build challenging, since the same code will take more time & resources to be built before it can be shipped as a container, which is why we should try to reduce the size of the images. Furthermore, when using container orchestration tools (Kubernetes), we would like to have compact images to reduce the image transfer and deploy time.
