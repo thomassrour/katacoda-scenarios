@@ -8,7 +8,7 @@ Let us see an exaple using our old code.
 
 First, navigate to the First_Try directory, and create two new .txt files, and write two different things inside them.
 
-In the directory's Dockerfile, paste the following code :
+In the directory's Dockerfile, paste (replacing the previous code)the following code :
 
 ```
 FROM ubuntu:18.04
@@ -31,7 +31,7 @@ Now change the `COPY` instruction by replacing the .txt file by the other one yo
 
 Then, navigate to the Second_Try directory, and do the same setup as above.
 
-In the directory's Dockerfile, paste the following code :
+In the directory's Dockerfile, paste (replacing the previous code) the following code :
 
 ```
 FROM ubuntu:18.04

@@ -42,7 +42,7 @@ This just creates a Go module, which will contain the name of the module and wha
 
 Now we are ready to try and build a Docker image to deploy this application.
 
-Let us first try to do this the way we would normally, by pasting the following in the Dockerfile :
+Let us first try to do this the way we would normally, by pasting (replacing the previous code) the following in the Dockerfile :
 
 ```
 FROM golang:1.12.0
@@ -75,7 +75,7 @@ docker image ls
 
 As you can see, it is quite large. We will now try to reduce the size using a multistage build.
 
-Navigate to the Second_Try directory, and complete the setup like above. Then, paste the following in the Dockerfile.
+Navigate to the Second_Try directory, and complete the setup like above. Then, paste (replacing the previous code) the following in the Dockerfile.
 
 ```
 #First step
