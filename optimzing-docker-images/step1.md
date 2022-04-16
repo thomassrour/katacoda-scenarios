@@ -34,7 +34,7 @@ As you can see, we now only have one `RUN` instruction, which reduces the number
 Then, navigate to /root/project/Second_Try and build the image using
 
 ```
-docker build -t your_image_name .
+docker build -t your_other_image_name .
 ```
 
 Firstly, you can easily notice that build time is reduced in the second instance, even without taking into consideration that the first `FROM` instruction isn't run again since it is cached (more on this later) . Now, list the images using
