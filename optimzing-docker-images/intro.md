@@ -2,7 +2,7 @@
 
 ## Description
 
-Nowadays, Docker (and containeraztion in general) is an essential tool for building and deploying applications. At the root of this technology are Docker images. However, these can very quickly get very large. In this tutorial, you will learn how to reduce both the size of an image and the time it takes to build it through different techniques.
+Nowadays, Docker (and containeraztion in general) is an essential tool for building and deploying applications. At the root of this technology are Docker images. They are the set of instructions used to create containers. However, these can very quickly get very large. In this tutorial, you will learn how to reduce both the size of an image and the time it takes to build it through different techniques.
 
 ## Learning Objectives
 
